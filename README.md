@@ -39,7 +39,7 @@ Notebook:
 - [`notebooks/portfolio-weighting.ipynb`](notebooks/portfolio-weighting.ipynb)
 
 
-![Portfolio allocation](assets/images/portfolio-allocation.png)
+![Portfolio allocation](assets/images/backtesting.png)
 
 
 ## 3. Portfolio Backtesting
