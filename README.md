@@ -39,7 +39,7 @@ Notebook:
 - [`notebooks/portfolio-weighting.ipynb`](notebooks/portfolio-weighting.ipynb)
 
 
-![Portfolio allocation](assets/images/backtesting.png)
+![Portfolio allocation](assets/images/portfolio-allocation.png)
 
 
 ## 3. Portfolio Backtesting
@@ -51,7 +51,7 @@ Notebook:
 - [`notebooks/portfolio-backtesting.ipynb`](notebooks/portfolio-backtesting.ipynb)
 
 
-![Benchmark comparison](assets/images/benchmark-comparison.png)
+![Benchmark comparison](assets/images/backtesting.png)
 
 
 ## 4. Efficient Frontier Optimization
@@ -70,8 +70,9 @@ Key visuals:
 
 ![Efficient frontier](assets/images/efficient-frontier.png)
 
-
 ![Optimal portfolio weights](assets/images/optimal-weights.png)
+
+![Optimal portfolio weights](assets/images/benchmark-comparison.png)
 
 
 ## 5. Dynamic Rebalancing With HERC
@@ -111,19 +112,6 @@ The final written analysis reports are included in the `analysis/` folder:
 - [`portfolio-optimization-analysis.pdf`](analysis/portfolio-optimization-analysis.pdf)
 - [`dynamic-portfolio-rebalancing-analysis.pdf`](analysis/dynamic-portfolio-rebalancing-analysis.pdf)
 
-## Visual Summary
-
-| Efficient Frontier | Optimal Weights |
-| --- | --- |
-| ![Efficient frontier](assets/images/efficient-frontier.png) | ![Optimal weights](assets/images/optimal-weights.png) |
-
-| Hierarchical Clustering | Dynamic Allocation |
-| --- | --- |
-| ![Hierarchical clustering](assets/images/hierarchical-clustering.png) | ![Dynamic asset allocation](assets/images/dynamic-asset-allocation.png) |
-
-| Portfolio Allocation | Benchmark Comparison |
-| --- | --- |
-| ![Portfolio allocation](assets/images/portfolio-allocation.png) | ![Benchmark comparison](assets/images/benchmark-comparison.png) |
 
 ## How To Run
 
