@@ -1,0 +1,9 @@
+numpy
+pandas
+matplotlib
+seaborn
+scipy
+yfinance
+yahooquery
+riskfolio-lib
+html-table-parser-python3
