@@ -1,8 +1,6 @@
 # InvestoQuest
 
-InvestoQuest is a portfolio analytics and investment strategy project focused on building, testing and evaluating portfolio construction methods using financial data.
-
-The project moves from data preprocessing and portfolio weighting to portfolio backtesting, efficient frontier optimization, hierarchical clustering and dynamic portfolio rebalancing using HERC.
+InvestoQuest is a quantitative portfolio analytics project focused on portfolio construction, optimization and historical backtesting using Modern Portfolio Theory and Hierarchical Equal Risk Contribution (HERC). The project explores multiple portfolio allocation techniques, evaluates their historical performance and demonstrates how optimization-based strategies can improve portfolio risk-return characteristics. The developed analytics pipeline was integrated into a Django-based web application for interactive portfolio analysis and visualization.
 
 ## Project Overview
 
@@ -17,6 +15,23 @@ Financial Data
 -> Dynamic Rebalancing
 -> Performance Evaluation
 ```
+## Key Features
+
+- Portfolio construction using multiple allocation strategies
+- Historical portfolio backtesting
+- Efficient Frontier and Maximum Sharpe portfolio optimization
+- Mean-Variance portfolio construction
+- Hierarchical Risk Parity (HRP) and HERC portfolio optimization
+- Transaction cost-aware dynamic rebalancing
+- Portfolio performance evaluation using risk-adjusted metrics
+- Integration of the analytics pipeline into a Django-based web application
+
+## Project Presentation
+
+A comprehensive presentation summarizing the project motivation, quantitative portfolio optimization techniques, implementation methodology and application workflow.
+**Presentation**
+
+- [`presentation/investoquest-project-presentation.pdf`](presentation/investoquest-project-presentation.pdf)
 
 ## Analysis Workflow
 
@@ -95,22 +110,45 @@ Key visuals:
 ![Optimal portfolio weights](assets/images/benchmark-comparison.png)
 
 
-## Results And Insights
 
-The project shows how portfolio construction changes when different methods are applied. Simple weighting methods provide a useful baseline, while optimization-based approaches help identify better risk-return tradeoffs.
+## Results and Insights
 
-Efficient frontier optimization highlights the relationship between expected return and volatility. It helps locate portfolios that are more efficient than naive allocation methods.
+The project compares multiple portfolio construction techniques ranging from traditional mean-variance optimization to hierarchical risk based allocation.
 
-Backtesting adds practical value by showing how strategies perform over historical periods. This is important because a mathematically optimal portfolio may not always remain stable under changing market conditions.
+Efficient Frontier optimization demonstrates how optimized portfolios can achieve improved risk return tradeoffs compared to naïve allocations, while historical backtesting highlights the practical performance of these strategies under real market conditions.
 
-The dynamic rebalancing approach using HERC adds another layer of analysis. By using hierarchical clustering, the portfolio can account for relationships between assets and adjust allocation over time.
+The implementation of HERC with transaction cost aware dynamic rebalancing further illustrates how adaptive portfolio allocation can respond to changing market structures while accounting for realistic trading constraints.
 
-## Reports
+## Application Interface
 
-The final written analysis reports are included in the `analysis/` folder:
+The portfolio analytics engine developed in this project was integrated into a Django-based web application to provide an interface for portfolio construction, optimization and historical performance analysis. The screenshots below illustrate the application interface used to interact with the underlying analytics modules.
+
+### Architecture
+
+![Django Architecture](assets/images/django-architecture.png)
+
+### Application Interface
+
+![Dashboard](assets/images/dashboard.png)
+
+## Documentation
+
+### Presentation
+
+- [`investoquest-project-presentation.pdf`](presentation/investoquest-project-presentation.pdf)
+
+### Technical Reports
 
 - [`portfolio-optimization-analysis.pdf`](analysis/portfolio-optimization-analysis.pdf)
 - [`dynamic-portfolio-rebalancing-analysis.pdf`](analysis/dynamic-portfolio-rebalancing-analysis.pdf)
+
+### Implementation Notebooks
+
+- `data-preprocessing.ipynb`
+- `portfolio-weighting.ipynb`
+- `portfolio-backtesting.ipynb`
+- `efficient-frontier-optimization.ipynb`
+- `dynamic-rebalancing-herc.ipynb`
 
 
 ## How To Run
@@ -131,19 +169,6 @@ Recommended order:
 4. `notebooks/efficient-frontier-optimization.ipynb`
 5. `notebooks/dynamic-rebalancing-herc.ipynb`
 
-
-## Project Files
-
-| Type | File |
-| --- | --- |
-| Notebook | [`data-preprocessing.ipynb`](notebooks/data-preprocessing.ipynb) |
-| Notebook | [`portfolio-weighting.ipynb`](notebooks/portfolio-weighting.ipynb) |
-| Notebook | [`portfolio-backtesting.ipynb`](notebooks/portfolio-backtesting.ipynb) |
-| Notebook | [`efficient-frontier-optimization.ipynb`](notebooks/efficient-frontier-optimization.ipynb) |
-| Notebook | [`dynamic-rebalancing-herc.ipynb`](notebooks/dynamic-rebalancing-herc.ipynb) |
-| Report | [`portfolio-optimization-analysis.pdf`](analysis/portfolio-optimization-analysis.pdf) |
-| Report | [`dynamic-portfolio-rebalancing-analysis.pdf`](analysis/dynamic-portfolio-rebalancing-analysis.pdf) |
-
 ## Repository Structure
 
 ```text
@@ -159,23 +184,26 @@ InvestoQuest/
 │   ├── efficient-frontier-optimization.ipynb
 │   └── dynamic-rebalancing-herc.ipynb
 │
+├── presentation/
+│   └── investoquest-project-presentation.pdf
+│
 ├── analysis/
 │   ├── portfolio-optimization-analysis.pdf
 │   └── dynamic-portfolio-rebalancing-analysis.pdf
 │
-├── assets/
-│   └── images/
-│       ├── efficient-frontier.png
-│       ├── optimal-weights.png
-│       ├── backtesting.png
-│       ├── hierarchical-clustering.png
-│       ├── portfolio-allocation.png
-│       ├── dynamic-asset-allocation.png
-│       └── benchmark-comparison.png
-│
-└── data/
+└── assets/
+    └── images/
+        ├── efficient-frontier.png
+        ├── optimal-weights.png
+        ├── backtesting.png
+        ├── hierarchical-clustering.png
+        ├── portfolio-allocation.png
+        ├── dynamic-asset-allocation.png
+        ├── django-architecture.png
+        ├── dashboard.png
+        └── benchmark-comparison.png
 ```
 
 ## Conclusion
 
-InvestoQuest demonstrates a complete portfolio analysis workflow from raw financial data preparation to advanced portfolio optimization and dynamic rebalancing. The project combines quantitative methods, visual analysis and written interpretation to evaluate how different portfolio strategies perform under historical market conditions.
+InvestoQuest demonstrates an end-to-end quantitative portfolio management workflow—from financial data preprocessing and portfolio construction to optimization, historical backtesting, and dynamic rebalancing. The project combines portfolio optimization techniques with practical performance evaluation to study how different allocation strategies behave under changing market conditions.
