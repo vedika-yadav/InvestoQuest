@@ -72,7 +72,6 @@ Key visuals:
 
 ![Optimal portfolio weights](assets/images/optimal-weights.png)
 
-![Optimal portfolio weights](assets/images/benchmark-comparison.png)
 
 
 ## 5. Dynamic Rebalancing With HERC
@@ -91,8 +90,9 @@ Key visuals:
 
 ![Hierarchical clustering](assets/images/hierarchical-clustering.png)
 
-
 ![Dynamic asset allocation](assets/images/dynamic-asset-allocation.png)
+
+![Optimal portfolio weights](assets/images/benchmark-comparison.png)
 
 
 ## Results And Insights
