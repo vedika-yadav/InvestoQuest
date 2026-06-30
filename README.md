@@ -167,6 +167,7 @@ InvestoQuest/
 │   └── images/
 │       ├── efficient-frontier.png
 │       ├── optimal-weights.png
+│       ├── backtesting.png
 │       ├── hierarchical-clustering.png
 │       ├── portfolio-allocation.png
 │       ├── dynamic-asset-allocation.png
